@@ -1,0 +1,73 @@
+#include<stdio.h>
+#include<conio.h>
+
+int x;
+float c,f,r,k;
+
+void main()
+
+{
+    printf("Menu Utama:\n");
+    printf("1.Konversisuhudari Celcius ke satuan lain\n");
+    printf("2.Konversisuhudari Reamurke satuan lain\n");
+    printf("3.Konversisuhudari Kelvin ke satuan lain\n");
+    printf("5.Keluar\n\n");
+
+    scanf("%d",&x);
+
+    if(x==1)
+
+        { //clrscr();
+            printf("Masukan besar suhu dalam celcius:\n\n");
+
+            scanf("%f",&c);
+
+            k=c+273;
+            r=c*0.8;
+            f=(c*1.8)+32;
+
+            printf("\nBesar suhu dalam Kelvin adalah :%f",k);
+            printf("\nBesar suhu dalam Reamur adalah:%f",r);
+            printf("\nBesar suhu dalam fahrenheit adalah:%f",f);
+
+        }
+    else if (x==2)
+        {//clrscr();
+            printf("Masukan besar suhu dalam Reamur:\n\n");
+
+            scanf("%f",&r);
+
+            k=((r*5)/4)+273;c=(r*5)/4;f=((r*9)/4)+32;
+
+            printf("\nBesar suhu dalam kelvin adalah:%f",k);
+            printf("\nBesar suhu dalam Celcius adalah:%f",c);
+            printf("\nBesar suhu dalam fahrenheit adalah:%f",f);
+
+        }
+        else if(x==4)
+
+            {//clrscr();
+                printf("Masukan besar suhu dalam Fahrenheit::\n\n");
+
+                scanf("%f",&f);
+
+                r=(((f-32)*4)/9);
+                c=(((f-32)*5)/9)+273;
+
+                printf("\nBesar suhu dalam Reamur adalah:%f",r);
+                printf("\nBesar suhu dalam Celcius:adalah:%f",c);
+                printf("\nBesar suhu dalam Kelvin:%f",k);
+
+            }
+
+        else
+
+            {//clrscr();
+            printf("Terima Kasih\n");
+
+
+
+        getch();
+    }
+}
+
